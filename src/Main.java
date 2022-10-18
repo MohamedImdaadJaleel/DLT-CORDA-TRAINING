@@ -13,6 +13,7 @@ public class Main extends TradeHeader{
         Main obj = new Main();
         GeneralTrade obj3 = new GeneralTrade();
         TradeExtended obj2 = new TradeExtended();
+        Footer obj4 = new Footer();
 
 
         String HEADR = obj.structure.toString();
@@ -22,9 +23,10 @@ public class Main extends TradeHeader{
         String GTrade3 = obj3.structure4.toString();
         String EXTENDED4 = obj2.structure.toString();
         String EXTENDED6 = obj2.structure2.toString();
+        String FooterTrade = obj4.structure.toString();
 
 
-        myMethod.myMethod(HEADR,EXTENDED4,EXTENDED6,GTrade,GTrade1,GTrade2,GTrade3);
+        myMethod.myMethod(HEADR,EXTENDED4,EXTENDED6,GTrade,GTrade1,GTrade2,GTrade3,FooterTrade);
 
     }
 }
