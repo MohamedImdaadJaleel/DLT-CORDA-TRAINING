@@ -14,7 +14,7 @@ public class GeneralTrade {
     List<String> structure3 = new ArrayList();
 
     String file_version;
-
+    String tag;
     String direction;
     String file_creation_time;
     String price;
@@ -23,6 +23,7 @@ public class GeneralTrade {
     String Buyer;
     String Seller;
     String trade_comment;
+
 
 
 
@@ -37,7 +38,7 @@ public class GeneralTrade {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("TRADE") && i == 1) {
-                    String tag = lines.get(i).substring(0, 5);
+                     tag = lines.get(i).substring(0, 5);
                     if (lines.get(i).substring(5, 9).equals("2191") || lines.get(i).substring(9, 11).equals("01") || lines.get(i).substring(11, 13).equals("20") && lines.get(i).substring(13, 22).equals("084503480")){
                         file_creation_time = "2191-01-20 08:45:03.480";
                     }
@@ -83,7 +84,7 @@ public class GeneralTrade {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("TRADE") && i == 2) {
-                    String tag = lines.get(i).substring(0, 5);
+                     tag = lines.get(i).substring(0, 5);
                     if (lines.get(i).substring(5, 9).equals("2191") || lines.get(i).substring(9, 11).equals("01") || lines.get(i).substring(11, 13).equals("20") && lines.get(i).substring(13, 22).equals("084504112")){
                         file_creation_time = "2191-01-20 08:45:04.112";
                     }
@@ -129,7 +130,7 @@ public class GeneralTrade {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("TRADE") && i == 3) {
-                    String tag = lines.get(i).substring(0, 5);
+                    tag = lines.get(i).substring(0, 5);
                     if (lines.get(i).substring(5, 9).equals("2191") || lines.get(i).substring(9, 11).equals("01") || lines.get(i).substring(11, 13).equals("20") && lines.get(i).substring(13, 22).equals("084505640")){
                         file_creation_time = "2191-01-20 08:45:05.640";
                     }
@@ -176,7 +177,7 @@ public class GeneralTrade {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("TRADE") && i == 5) {
-                    String tag = lines.get(i).substring(0, 5);
+                     tag = lines.get(i).substring(0, 5);
                     if (lines.get(i).substring(5, 9).equals("2191") || lines.get(i).substring(9, 11).equals("01") || lines.get(i).substring(11, 13).equals("20") && lines.get(i).substring(13, 22).equals("085730444")){
                         file_creation_time = "2191-01-20 08:57:30.444";
                     }

@@ -10,7 +10,7 @@ public class TradeHeader {
             String line;
             List<String> lines = new ArrayList();
             List<String> structure = new ArrayList();
-
+            String tag;
             String file_version;
 
             String file_creation_time;
@@ -28,7 +28,7 @@ public class TradeHeader {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("HEADR") && i == 0) {
-                    String tag = lines.get(i).substring(0, 5);
+                    tag = lines.get(i).substring(0, 5);
                     if (lines.get(i).substring(5, 9).equals("0004") || lines.get(i).substring(5, 9).equals("0005")) {
                         file_version = lines.get(i).substring(5, 9);
                     }
@@ -46,10 +46,6 @@ public class TradeHeader {
                     structure.add(file_creation_time);
                     structure.add(file_comment);
                 }
-
-
-
-
             }
 
 

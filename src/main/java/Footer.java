@@ -9,7 +9,7 @@ public class Footer {
     String line;
     List<String> lines = new ArrayList();
     List<String> structure = new ArrayList();
-
+    String tag;
     String number_of_char;
     String number_of_trade;
 
@@ -24,7 +24,7 @@ public class Footer {
 
             for (int i = 0; i < lines.size(); i++) {
                 if (lines.get(i).substring(0, 5).equals("FOOTR") && i == 7) {
-                    String tag = lines.get(i).substring(0, 5);
+                    tag = lines.get(i).substring(0, 5);
 
 
                     if (lines.get(i).substring(5,15).equals("0000000006")) {
