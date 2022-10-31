@@ -36,15 +36,15 @@ public class GeneralTrade_CSV {
                 String item_id =CSV.get(i).substring(36,48);
                 String price =CSV.get(i).substring(50,57);
                 String Qty =CSV.get(i).substring(59,61);
-                String Buyer =CSV.get(i).substring(62,67);
-                String Seller =CSV.get(i).substring(68,73);
-                String Trade_Comments =CSV.get(i).substring(74,107);
+                String Buyer =CSV.get(i).substring(63,67);
+                String Seller =CSV.get(i).substring(69,73);
+                String Trade_Comments =CSV.get(i).substring(74,100);
 
                 csvPrinter.printRecord(tag,file_creation_time,direction,item_id,price,Qty,Buyer,Seller,Trade_Comments);
             }
 
 
-            csvPrinter.printRecord("TRADE","2191-01-20 08:57:30.444","S","AWY0ATMOPRC1","+10000291110100","01","WEYU","CYBR","            Be my guest.");
+            csvPrinter.printRecord("TRADE","2191-01-20 08:57:30.444","S","AWY0ATMOPRC1","10000291110100","01","WEYU","CYBR","Be my guest.");
             csvPrinter.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);

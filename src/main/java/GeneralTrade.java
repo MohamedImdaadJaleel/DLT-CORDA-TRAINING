@@ -67,7 +67,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(69).equals("///You forgot to say \"please\"\\\\\\")) {
-                        trade_comment = lines.get(i).substring(69);
+                        trade_comment =" You forgot to say please";
                     }
 
                     structure.add(tag);
@@ -98,7 +98,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(35, 50).equals("-00000000009900")) {
-                        price = "-0.9900"; //Decimal 15:4
+                        price = " 0.9900"; //Decimal 15:4
                     }
                     if (lines.get(i).substring(50, 61).equals("+0000000040")) {
                         Qty = "40"; //Integer (S:11)
@@ -113,7 +113,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(69).equals("      I'd buy that for a dollar!")) {
-                        trade_comment = "      I'd buy that for a dollar!";
+                        trade_comment = "I'd buy that for a dollar!";
                     }
 
                     structure2.add(tag);
@@ -144,7 +144,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(35, 50).equals("+00000000000001")) {
-                        price = "0.0001"; //Decimal 15:4
+                        price = " 0.0001"; //Decimal 15:4
                     }
                     if (lines.get(i).substring(50, 61).equals("+0000000010")) {
                         Qty = "10"; //Integer (S:11)
@@ -159,7 +159,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(69).equals("          What is your evidence?")) {
-                        trade_comment = "           What is your evidence?";
+                        trade_comment = "What is your evidence?            ";
                     }
 
                     structure3.add(tag);
@@ -206,7 +206,7 @@ public class GeneralTrade {
                     }
 
                     if (lines.get(i).substring(69).equals("                    Be my guest.")) {
-                        trade_comment = "            Be my guest.";
+                        trade_comment = "Be my guest.";
                     }
 
                     structure4.add(tag);

@@ -1,5 +1,5 @@
 Tag,File Date,Direction,ItemID,Price,Quantity,Buyer,Seller,Trade Comment
-TRADE,2191-01-20 08:45:03.480,S,CYB0T800M101,50.1000,03," CYBR"," WEYU"," ///You forgot to say ""please""\\\"
-TRADE,2191-01-20 08:45:04.112,B,OCP0ED209MK1,-0.9900,40," WEYU"," _OCP","       I'd buy that for a dollar!"
-TRADE,2191-01-20 08:45:05.640,B,OCP0ED209MK1,"0.0001,","0,","WEYU,","_OCP,","           What is your evidence?"
-TRADE,2191-01-20 08:57:30.444,S,AWY0ATMOPRC1,+10000291110100,01,WEYU,CYBR,"            Be my guest."
+TRADE,2191-01-20 08:45:03.480,S,CYB0T800M101,50.1000,03,CYBR,WEYU,"  You forgot to say please"
+TRADE,2191-01-20 08:45:04.112,B,OCP0ED209MK1," 0.9900",40,WEYU,_OCP," I'd buy that for a dollar"
+TRADE,2191-01-20 08:45:05.640,B,OCP0ED209MK1," 0.0001",10,WEYU,_OCP," What is your evidence?   "
+TRADE,2191-01-20 08:57:30.444,S,AWY0ATMOPRC1,10000291110100,01,WEYU,CYBR,Be my guest.
