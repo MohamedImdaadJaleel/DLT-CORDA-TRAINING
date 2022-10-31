@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 
 public class Footer_CSV {
-    private static final String SAMPLE_CSV_FILE = "./FooterTrade.csv";
+    private static final String SAMPLE_CSV_FILE = "./Footer.csv";
     static void footer_Method(String FooterTrade) {
 
 

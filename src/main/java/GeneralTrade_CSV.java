@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 
 public class GeneralTrade_CSV {
-    private static final String SAMPLE_CSV_FILE = "./GeneralTrade.csv";
+    private static final String SAMPLE_CSV_FILE = "./Trade.csv";
     static void general_TradeMethod(String GTrade,String GTrade1, String GTrade2,String GTrade3) {
 
 

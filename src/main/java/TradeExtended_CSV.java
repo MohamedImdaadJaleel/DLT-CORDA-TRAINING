@@ -16,18 +16,19 @@ public class TradeExtended_CSV {
         CSV.add(EXTRADE1);
         CSV.add(EXTRADE2);
 
+        System.out.println(CSV);
 
         try (
 
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get(SAMPLE_CSV_FILE));
-                CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("Tag","File Version","File Date","Direction","ItemID","Price","Quantity","Buyer","Seller","Nested Tags"));
+                CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("Tag","Trade Version","Trade Date","Direction","ItemID","Price","Quantity","Buyer","Seller","Nested Tags"));
 
         )
         {
             for (int i=0;i<CSV.size();i++){
 
                 String tag = CSV.get(i).substring(1,6);
-                String file_version = CSV.get(i).substring(8,12);
+                String file_version = CSV.get(i).substring(11,12);
                 String file_creation_time =CSV.get(i).substring(14,37);
                 String direction =CSV.get(i).substring(39,43);
                 String item_id =CSV.get(i).substring(45,57);
