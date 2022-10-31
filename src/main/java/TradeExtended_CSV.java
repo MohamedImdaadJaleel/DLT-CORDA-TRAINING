@@ -16,7 +16,7 @@ public class TradeExtended_CSV {
         CSV.add(EXTRADE1);
         CSV.add(EXTRADE2);
 
-        System.out.println(CSV);
+
 
         try (
 

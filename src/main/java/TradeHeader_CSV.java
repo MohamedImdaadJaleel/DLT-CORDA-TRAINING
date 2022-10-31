@@ -16,7 +16,7 @@ public class TradeHeader_CSV {
 
         List<String> CSV = new ArrayList();
         CSV.add(HEADR);
-        System.out.println(CSV);
+
 
         try (
 
